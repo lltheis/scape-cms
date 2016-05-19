@@ -1,3 +1,270 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.job-row {
+	padding-bottom: 40px;
+}
+
+.job-details {
+	text-align: right;
+}
+
+/*****GENERAL ******/
+body {
+	font-family: "Century Gothic", Arial, sans-serif;
+	position: relative;
+	padding-top: 50px;
+	color: #b8b4ae;
+	/*background-color: #fff;*/
+}
+
+h1, 
+h2 {
+	font-family: "Century Gothic", Arial, sans-serif;
+	color: #816f5a;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: #816f5a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #816f5a; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*****RESPONSIVENESS ******/
+/* Large desktop */
+@media (min-width: 1200px) {
+	.carousel-caption {font-size: 1em;}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.carousel-caption {font-size: 1em;}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.carousel-caption {font-size: .9em;}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.carousel-caption {font-size: .75em;}
+	.carousel-title {font-size: 1.2em;}
+}
+
+.container-fluid {
+    padding: 0px 20px;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+> [class^="col-"],
+> [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.col-sm-2 {
+	padding: 0px;
+}
+
+
+
+/*****NAVIGATION ******/
+.navbar-inverse {
+	background-color: #FFF;
+	border-color: none;
+	border-bottom-color: #FFF;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	display: inline-block;
+	z-index: 1;
+}
+
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	transition: background-color 400ms,color 400ms;
+	-webkit-transition:background-color 400ms,color 400ms;
+}
+
+.navbar-header a {
+	color: #816f5a;
+	font-family: Futura, Arial, sans-serif;
+	letter-spacing: .05em;
+	font-size: 1.5em;
+}
+
+.nav-other {
+	letter-spacing: .05em;
+	padding: 0px 10px 0px 10px;
+}
+
+.nav-home {
+	padding-top: 10px;
+}
+
+.navbar>ul>li>a {
+	color: #fff;
+}
+
+.anchor {
+	padding-top: 65px;
+}
+
+.navbar-toggle {
+	background-color: #816f5a;
+	border: #FFF;
+	border-radius: 0px;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
+.nav,
+.navbar,
+.navbar-inverse .navbar-inner {
+filter:none!important;
+background-image: none;
+}
+
+.mapping-nav {
+	list-style:none;
+	font-size: 1.25em;
+	letter-spacing: 1px;
+}
+
+.dropit {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 150px;
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dropit .dropit-open .dropit-submenu { 
+	display: block; 
+}
+
+/**** PROJECTS ****/
+.works-content {
+	padding-top: 15px;
+}
+
+.works-title {
+	font-size: 1.25em;
+	color: #816f5a;
+}
+
+.works-img {
+	margin: auto;
+	position: relative;
+	padding: 0px;
+}
+
+.info {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	color: #272822;
+	font-family: Futura;
+	text-transform: uppercase;
+	font-weight:700;
+	letter-spacing: .1em;
+	line-height: 1.1;
+	display: none;
+}
+
+.project {
+	padding: 0px;
+}
+
+.project-label {
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+.project-title>a {
+	color: #6fc84c;
+}
+
+.project-title>a:hover {
+	color: #fff;
+}
+
+.popover-title {
+	color: #333;
+}
+
+.popover-content {
+	color: #414141;
+}
+
+
+/**** CONTACT ****/
+.img-about {
+	width: 100%;
+} 
+
+#contact-background {
+	padding-top: 25px;
+}
+
+
+/**** PUBLICATIONS ****/
+.learn-more {
+	text-align: left;
+	float: left;
+}
+
+.modal-button-resume {
+	float: right;
+	padding: 25px;
+}
+
+.btn-resume {
+	color: #fff;
+	background-color: #333;
+}
+
+#modalembed {
+	height: 700px;
+	width: 100%;
+	padding: 10px;
+}
+
+
+
+/*****FOOTER ******/
+.footer {
+	padding: 15px;
+}
+
+.footer-left {
+	display: inline-block;
+}
+
+.footer-right {
+	float: right;
+}
+

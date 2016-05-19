@@ -1,0 +1,13 @@
+<div class="container-fluid">
+	<div class="row job-row">
+		<div class="col-sm-3 col-sm-offset-6 job-details">
+			<%= link_to project.name, project %><br>
+			<%= project.location %><br>
+			<%= project.year %>
+		</div>
+		<div class="col-sm-3">
+			<%= image_tag(project.img_url, class: "img-responsive featured-project") %>
+			<!--<div><%= project.description %></div> -->
+    </div>
+	</div>
+</div>

@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>scape design studio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<%= render("shared/navbar") %>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<div class="container">
 
-<%= yield %>
+  <%= render("shared/page_header") %>
 
-<!-- FOOTER -->
-  <div class="navbar navbar-fixed-bottom footer">
-    <hr>
-    <div class="footer-right">&copy; the-is.com</div>
-  </div>
+  <%= yield %>
 
-</body>
-</html>
+  <%= render("shared/footer") %>
+
+</div>
+
+<% parent_layout "base" %>
