@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160511164520) do
+ActiveRecord::Schema.define(version: 20160525205122) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
@@ -21,6 +21,14 @@ ActiveRecord::Schema.define(version: 20160511164520) do
     t.string   "img_url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "img_1"
+    t.string   "img_2"
+    t.string   "img_3"
+    t.string   "img_4"
+    t.string   "img_5"
+    t.string   "img_6"
+    t.string   "img_7"
+    t.string   "img_8"
   end
 
 end

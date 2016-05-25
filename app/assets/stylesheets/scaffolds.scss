@@ -4,7 +4,6 @@ body {
   font-family: "Century Gothic", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  padding-top: 50px;
   position: relative;
 }
 
@@ -35,6 +34,11 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #notice {

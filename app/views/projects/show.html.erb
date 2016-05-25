@@ -1,29 +1,27 @@
 <p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="col-sm-8">
+      <div><a href="/projects#ourwork">our work</a></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="royalSlider sliderWorks rsDefault">
+          <%= image_tag(@project.img_1, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_2, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_3, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_4, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_5, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_6, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_7, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_8, class: "img-responsive rsImg") %>
+        </div><!-- royalSliderMini -->
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @project.location %>
-</p>
-
-<p>
-  <strong>Year:</strong>
-  <%= @project.year %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<p>
-  <strong>Img url:</strong>
-  <%= @project.img_url %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+      <div class="works-content">
+        <span class="works-title"><%= @project.name %></span><br>
+        <%= @project.location %>
+        <%= @project.year %>
+      </div>
+      <div><%= @project.description %></div>
+    </div>
+  </div><!-- /row -->
+</div><!-- /container -->
