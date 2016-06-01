@@ -5,7 +5,8 @@
       <div><a href="/projects#ourwork">our work</a></div>
     </div>
     <div class="col-sm-4">
-        <div class="royalSlider sliderWorks rsDefault">
+      <div class="project-slider-holder">
+        <div class="royalSlider" id="project-slider">
           <%= image_tag(@project.img_1, class: "img-responsive rsImg") %>
           <%= image_tag(@project.img_2, class: "img-responsive rsImg") %>
           <%= image_tag(@project.img_3, class: "img-responsive rsImg") %>
@@ -14,14 +15,16 @@
           <%= image_tag(@project.img_6, class: "img-responsive rsImg") %>
           <%= image_tag(@project.img_7, class: "img-responsive rsImg") %>
           <%= image_tag(@project.img_8, class: "img-responsive rsImg") %>
-        </div><!-- royalSliderMini -->
-
+        </div><!-- RoyalSlider -->
+      </div><!-- project-slider-holder -->
+    </div><!-- Bootstrap col-sm-4 -->
+      <div class="col-sm-4 works">
       <div class="works-content">
         <span class="works-title"><%= @project.name %></span><br>
         <%= @project.location %>
         <%= @project.year %>
       </div>
       <div><%= @project.description %></div>
-    </div>
-  </div><!-- /row -->
+  </div><!-- Bootstrap col-sm-4 -->
+</div><!-- /row -->
 </div><!-- /container -->

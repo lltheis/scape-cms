@@ -20,6 +20,9 @@ gem 'sprockets-rails', '2.3.3'
 
 gem 'autoprefixer-rails'
 
+gem 'refinerycms', '~> 3.0.0'
+gem 'refinerycms-authentication-devise', '~> 1.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
