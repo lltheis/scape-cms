@@ -1,0 +1,42 @@
+<% content_for :body_content_title do %>
+  <%= @project.name %>
+<% end %>
+
+<% content_for :body do %>
+  <div class="col-sm-8">
+    <div><a href="/projects#ourwork">our work</a></div>
+    </div>
+  <section>
+
+
+      <%=raw @project.name %>
+      <%=raw @project.location %>
+      <%=raw @project.year %>
+      <%=raw @project.description %>
+      <%=raw @project.img_url %>
+      <%=raw @project.img_1 %>
+      <%=raw @project.img_2 %>
+      <%=raw @project.img_3 %>
+      <%=raw @project.img_4 %>
+      <%=raw @project.img_5 %>
+      <%=raw @project.img_6 %>
+      <%=raw @project.img_7 %>
+      <%=raw @project.img_8 %>
+
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="projects">
+      <% @projects.each do |project| %>
+        <li>
+          <%= link_to project.name, refinery.projects_project_path(project) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

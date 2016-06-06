@@ -1,0 +1,41 @@
+it:
+  refinery:
+    plugins:
+      projects:
+        title: Projects
+    projects:
+      admin:
+        projects:
+          actions:
+            create_new: Aggiungi Nuovo Project
+            reorder: Riordina Projects
+            reorder_done: Termina il Riordino di Projects
+          records:
+            title: Projects
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Projects. Clicca "Aggiungi Nuovo Project" per aggiungere il tuo primo project.
+          project:
+            view_live_html: Guarda live questo project <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo project
+            delete: Rimuovi per sempre questo project
+      projects:
+        show:
+          other: Altri Projects
+  activerecord:
+    attributes:
+      'refinery/projects/project':
+        name: Name
+        location: Location
+        year: Year
+        description: Description
+        created_at: Created At
+        updated_at: Updated At
+        img_url: Img Url
+        img_1: Img 1
+        img_2: Img 2
+        img_3: Img 3
+        img_4: Img 4
+        img_5: Img 5
+        img_6: Img 6
+        img_7: Img 7
+        img_8: Img 8

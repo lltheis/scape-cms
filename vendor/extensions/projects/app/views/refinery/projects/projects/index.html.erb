@@ -1,0 +1,19 @@
+<% content_for :body do %>
+<div class="container-fluid">
+	<div class="row job-row">
+		<div class="col-sm-3 col-sm-offset-6 job-details">
+    	<% @projects.each do |project| %>
+        <%= link_to project.name, refinery.projects_project_path(project) %>
+        <%= project.location %><br>
+				<%= project.year %>
+		</div>
+		<div class="col-sm-3">
+			<%= image_tag(project.img_url, class: "img-responsive featured-project") %>
+    </div>
+	</div>
+</div>
+    <% end %>
+
+<% end %>
+
+<%= render '/refinery/content_page' %>

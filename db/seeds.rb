@@ -12,3 +12,6 @@ Project.create(name: 'Badger', location: 'west ketchum', year: '2013', descripti
 Project.create(name: 'Convertible House', location: 'gimlet', year: '2012', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat scelerisque odio vel volutpat. Aenean rhoncus, felis a volutpat imperdiet, diam erat condimentum nunc, non venenatis purus tellus vitae lectus', img_1: 'ConvertibleHouse_1.jpg', img_2: 'ConvertibleHouse_2.jpg', img_3: 'ConvertibleHouse_3.jpg', img_4: 'ConvertibleHouse_4.jpg', img_5: 'ConvertibleHouse_7.jpg', img_6: 'ConvertibleHouse_9.jpg', img_7: 'ConvertibleHouse_10.jpg')
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Projects extension
+Refinery::Projects::Engine.load_seed

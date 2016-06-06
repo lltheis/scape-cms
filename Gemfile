@@ -22,6 +22,8 @@ gem 'sprockets-rails', '2.3.3'
 
 gem 'refinerycms', '~> 3.0.0'
 gem 'refinerycms-authentication-devise', '~> 1.0'
+# Add the default visual editor, for now.
+gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 
 gem 'autoprefixer-rails'
 
@@ -56,3 +58,5 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'refinerycms-projects', path: 'vendor/extensions'

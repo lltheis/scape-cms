@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160606123963) do
+ActiveRecord::Schema.define(version: 20160606162812) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
@@ -161,6 +161,25 @@ ActiveRecord::Schema.define(version: 20160606123963) do
   add_index "refinery_pages", ["lft"], name: "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], name: "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], name: "index_refinery_pages_on_rgt"
+
+  create_table "refinery_projects", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "year"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "img_url"
+    t.string   "img_1"
+    t.string   "img_2"
+    t.string   "img_3"
+    t.string   "img_4"
+    t.string   "img_5"
+    t.string   "img_6"
+    t.string   "img_7"
+    t.string   "img_8"
+    t.integer  "position"
+  end
 
   create_table "refinery_resource_translations", force: :cascade do |t|
     t.integer  "refinery_resource_id", null: false
