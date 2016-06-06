@@ -1,42 +1,38 @@
-<% content_for :body_content_title do %>
-  <%= @project.name %>
-<% end %>
+
 
 <% content_for :body do %>
-  <div class="col-sm-8">
-    <div><a href="/projects#ourwork">our work</a></div>
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="col-sm-8">
+      <div><a href="/projects">our work</a></div>
     </div>
-  <section>
-
-
-      <%=raw @project.name %>
-      <%=raw @project.location %>
-      <%=raw @project.year %>
-      <%=raw @project.description %>
-      <%=raw @project.img_url %>
-      <%=raw @project.img_1 %>
-      <%=raw @project.img_2 %>
-      <%=raw @project.img_3 %>
-      <%=raw @project.img_4 %>
-      <%=raw @project.img_5 %>
-      <%=raw @project.img_6 %>
-      <%=raw @project.img_7 %>
-      <%=raw @project.img_8 %>
-
-  </section>
+    <div class="col-sm-4">
+      <div class="project-slider-holder">
+        <div class="royalSlider" id="project-slider">
+          <%= image_tag(@project.img_1, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_2, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_3, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_4, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_5, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_6, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_7, class: "img-responsive rsImg") %>
+          <%= image_tag(@project.img_8, class: "img-responsive rsImg") %>
+        </div><!-- RoyalSlider -->
+      </div><!-- project-slider-holder -->
+    </div><!-- Bootstrap col-sm-4 -->
+      <div class="col-sm-4 works">
+      <div class="works-content">
+        <span class="works-title"><%= @project.name %></span><br>
+        <%= @project.location %>
+        <%= @project.year %>
+      </div>
+      <div><%= @project.description %></div>
+  </div><!-- Bootstrap col-sm-4 -->
+</div><!-- /row -->
+</div><!-- /container -->
+  
 <% end %>
 
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="projects">
-      <% @projects.each do |project| %>
-        <li>
-          <%= link_to project.name, refinery.projects_project_path(project) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
+
 
 <%= render '/refinery/content_page' %>
