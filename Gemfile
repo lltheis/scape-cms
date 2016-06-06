@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
@@ -18,10 +20,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'sprockets-rails', '2.3.3'
 
-gem 'autoprefixer-rails'
-
 gem 'refinerycms', '~> 3.0.0'
 gem 'refinerycms-authentication-devise', '~> 1.0'
+
+gem 'autoprefixer-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
