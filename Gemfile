@@ -6,7 +6,10 @@ gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
 end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -34,10 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -69,7 +69,6 @@ gem 'heroku'
 group :production do
   # Dragonfly's S3 Data Store extension allows you to use S3 assets (added for Heroku)
   gem 'dragonfly-s3_data_store'
-
   # Gems that are recommended for using Heroku:
   gem 'rails_12factor'
   gem 'puma'
@@ -77,3 +76,5 @@ group :production do
   # Postgres support (added for Heroku)
   gem 'pg'
 end
+
+ruby '2.1.8'
