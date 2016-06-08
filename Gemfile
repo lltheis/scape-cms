@@ -3,18 +3,18 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
+# Use sqlite3 as the database for Active Record
+group :development, :test do
+  gem 'sqlite3'
+end
 # Use SCSS for stylesheets
-gem 'sass-rails', '>= 5.0'
+gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sprockets-rails', '2.3.3'
-gem 'autoprefixer-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -35,33 +35,45 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-	# Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  	# Access an IRB console on exception pages or by using <%= console %> in views
+end
+
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-	gem 'spring'
+  gem 'spring'
 end
 
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# Refinery CMS
+gem 'refinerycms', '~> 3.0'
 
-#Production server
-group :production do
-	gem 'rails_12factor'
-	gem 'pg', group: :production
-end
-
-
-# RefineryCMS
-gem 'refinerycms', '~> 3.0.0'
-gem 'refinerycms-authentication-devise', '~> 1.0'
-# Add the default visual editor, for now.
+# Optionally, specify additional Refinery CMS Extensions here:
+gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1']
 gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
-gem 'refinerycms-projects', path: 'vendor/extensions'
-gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: 'master'
+gem 'refinerycms-authentication-devise', '~> 1.0'
+#  gem 'refinerycms-blog', ['~> 3.0', '>= 3.0.0']
+#  gem 'refinerycms-inquiries', ['~> 3.0', '>= 3.0.0']
+#  gem 'refinerycms-search', ['~> 3.0', '>= 3.0.0']
+#  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
 
+# The Ruby version is specified here so that Heroku uses the right version.
+# ruby 'ruby-2.1.8'
 
+# The Heroku gem allows you to interface with Heroku's API
+gem 'heroku'
+
+group :production do
+  # Dragonfly's S3 Data Store extension allows you to use S3 assets (added for Heroku)
+  gem 'dragonfly-s3_data_store'
+
+  # Gems that are recommended for using Heroku:
+  gem 'rails_12factor'
+  gem 'puma'
+
+  # Postgres support (added for Heroku)
+  gem 'pg'
+end

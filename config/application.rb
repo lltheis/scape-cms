@@ -35,5 +35,6 @@ module ScapedesignstudioRails
 
     #From RefineryCMS http://www.refinerycms.com/guides/heroku
     config.assets.initialize_on_precompile = true
+    config.serve_static_assets = true
   end
 end
