@@ -52,7 +52,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Production server
 group :production do
 	gem 'rails_12factor'
-	gem 'pg'
+	gem 'pg', group: :production
 end
 
 
