@@ -1,0 +1,27 @@
+<% content_for :body do %>
+  <ul id="projects">
+    <% @projects.each do |project| %>
+      <li>
+        
+      </li>
+    <% end %>
+<% end %>
+
+
+
+<!-- OUR WORK SECTION -->        
+<div class="container">
+  <div class="row no-gutter">
+    <div class="col-sm-10">
+      <div class="big-box">&nbsp;</div>
+    </div>
+    <div class="col-sm-2">
+      <div class="row no-gutter"><a href="project-badger.html">
+        <div class="col-sm-2"><div class="works-title"><%= link_to project.name, refinery.projects_project_path(project) %></div></div>
+        <div class="col-sm-2 works-img"><img src="img/Badger_1.jpg" class="img-responsive"></div>
+      </div><!-- /row works -->
+    </div>
+  </div><!-- /row -->
+</div><!-- /container -->
+
+<%= render '/refinery/content_page' %>

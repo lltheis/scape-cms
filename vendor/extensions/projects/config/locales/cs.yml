@@ -28,8 +28,6 @@ cs:
         location: Location
         year: Year
         description: Description
-        created_at: Created At
-        updated_at: Updated At
         img_url: Img Url
         img_1: Img 1
         img_2: Img 2

@@ -1,19 +1,24 @@
-<% content_for :body do %>
-<div class="container-fluid">
-	<div class="row job-row">
-		<div class="col-sm-3 col-sm-offset-6 job-details">
-    	<% @projects.each do |project| %>
-        <%= link_to project.name, refinery.projects_project_path(project) %>
-        <%= project.location %><br>
-				<%= project.year %>
-		</div>
-		<div class="col-sm-3">
-			<%= image_tag(project.img_url, class: "img-responsive featured-project") %>
+<!-- OUR WORK SECTION -->        
+<div class="container">
+  <div class="row no-gutter">
+    <div class="col-sm-10">
+      <div class="big-box">&nbsp;</div>
     </div>
-	</div>
-</div>
-    <% end %>
-
+    <div class="col-sm-2">
+      <div class="row no-gutter"><a href="project-badger.html">
+        <div class="col-sm-2">
+        <div class="works-title">
+        <% content_for :body do %>
+        <% @projects.each do |project| %>
+        <%= link_to project.name, refinery.projects_project_path(project) %>
+        </div>
+      	</div>
+        <div class="col-sm-2 works-img"><img src="img/Badger_1.jpg" class="img-responsive"></div>
+      </div><!-- /row works -->
+    </div>
+  </div><!-- /row -->
+</div><!-- /container -->
+<% end %>
 <% end %>
 
 <%= render '/refinery/content_page' %>

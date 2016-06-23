@@ -15,7 +15,7 @@
 
   <div class='field'>
     <%= f.label :year -%>
-    <%= f.text_field :year -%>
+    <%= f.date_select :year -%>
   </div>
 
   <div class='field'>
@@ -23,16 +23,6 @@
                 :f => f,
                 :fields => [:description],
                 :object => "projects/project" -%>
-  </div>
-
-  <div class='field'>
-    <%= f.label :created_at -%>
-    <%= f.datetime_select :created_at -%>
-  </div>
-
-  <div class='field'>
-    <%= f.label :updated_at -%>
-    <%= f.datetime_select :updated_at -%>
   </div>
 
   <div class='field'>

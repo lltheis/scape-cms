@@ -1,3 +1,13 @@
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-events (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.3)
+    refinerycms-projects (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -303,6 +313,8 @@ DEPENDENCIES
   refinerycms (~> 3.0)
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.1)
   refinerycms-authentication-devise (~> 1.0)
+  refinerycms-events!
+  refinerycms-projects!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
@@ -311,6 +323,9 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+
+RUBY VERSION
+   ruby 2.1.8p440
 
 BUNDLED WITH
    1.12.5

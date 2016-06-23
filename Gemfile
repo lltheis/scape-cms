@@ -78,3 +78,5 @@ group :production do
 end
 
 ruby '2.1.8'
+gem 'refinerycms-events', path: 'vendor/extensions'
+gem 'refinerycms-projects', path: 'vendor/extensions'

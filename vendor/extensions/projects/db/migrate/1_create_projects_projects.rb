@@ -4,10 +4,8 @@ class CreateProjectsProjects < ActiveRecord::Migration
     create_table :refinery_projects do |t|
       t.string :name
       t.string :location
-      t.string :year
+      t.date :year
       t.text :description
-      t.datetime :created_at
-      t.datetime :updated_at
       t.string :img_url
       t.string :img_1
       t.string :img_2

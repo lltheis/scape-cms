@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-projects'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Projects extension for Refinery CMS'
-  s.date              = '2016-06-06'
+  s.date              = '2016-06-23'
   s.summary           = 'Projects extension for Refinery CMS'
   s.authors           = 
   s.require_paths     = %w(lib)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160606162812) do
+ActiveRecord::Schema.define(version: 20160623154001) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
@@ -72,6 +72,16 @@ ActiveRecord::Schema.define(version: 20160606162812) do
 
   add_index "refinery_authentication_devise_users", ["id"], name: "index_refinery_authentication_devise_users_on_id"
   add_index "refinery_authentication_devise_users", ["slug"], name: "index_refinery_authentication_devise_users_on_slug"
+
+  create_table "refinery_events", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "date"
+    t.integer  "photo_id"
+    t.text     "blurb"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_image_translations", force: :cascade do |t|
     t.integer  "refinery_image_id", null: false
