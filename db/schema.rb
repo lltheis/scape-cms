@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160623154001) do
+ActiveRecord::Schema.define(version: 20160624180921) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
@@ -82,6 +82,28 @@ ActiveRecord::Schema.define(version: 20160623154001) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "refinery_image_page_translations", force: :cascade do |t|
+    t.integer  "refinery_image_page_id", null: false
+    t.string   "locale",                 null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.text     "caption"
+  end
+
+  add_index "refinery_image_page_translations", ["locale"], name: "index_refinery_image_page_translations_on_locale"
+  add_index "refinery_image_page_translations", ["refinery_image_page_id"], name: "index_186c9a170a0ab319c675aa80880ce155d8f47244"
+
+  create_table "refinery_image_pages", force: :cascade do |t|
+    t.integer "image_id"
+    t.integer "page_id"
+    t.integer "position"
+    t.text    "caption"
+    t.string  "page_type", default: "page"
+  end
+
+  add_index "refinery_image_pages", ["image_id"], name: "index_refinery_image_pages_on_image_id"
+  add_index "refinery_image_pages", ["page_id"], name: "index_refinery_image_pages_on_page_id"
 
   create_table "refinery_image_translations", force: :cascade do |t|
     t.integer  "refinery_image_id", null: false
@@ -208,6 +230,24 @@ ActiveRecord::Schema.define(version: 20160623154001) do
     t.integer  "file_size"
     t.string   "file_uid"
     t.string   "file_ext"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "refinery_works", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "year"
+    t.text     "description"
+    t.integer  "img_1_id"
+    t.integer  "img_2_id"
+    t.integer  "img_3_id"
+    t.integer  "img_4_id"
+    t.integer  "img_5_id"
+    t.integer  "img_6_id"
+    t.integer  "img_7_id"
+    t.integer  "img_8_id"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

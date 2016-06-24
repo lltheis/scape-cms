@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.8'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -10,6 +11,8 @@ group :development, :test do
   gem 'byebug'
 end
 
+# Twitter bootsrap
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -52,13 +55,14 @@ end
 gem 'refinerycms', '~> 3.0'
 
 # Optionally, specify additional Refinery CMS Extensions here:
-gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1']
+# Removed 'refinery-acts-as-indexed' on 6/24/16 as it was causing permissions errors when saving in Refinery on localhost. Not sure what other issues removing it will cause.
+# gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.1'] 
 gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 gem 'refinerycms-authentication-devise', '~> 1.0'
 #  gem 'refinerycms-blog', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-inquiries', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-search', ['~> 3.0', '>= 3.0.0']
-#  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
+gem 'refinerycms-page-images', '~> 3.0.0', github: "refinery/refinerycms-page-images", branch: "master"
 
 # The Ruby version is specified here so that Heroku uses the right version.
 # ruby 'ruby-2.1.8'
@@ -77,6 +81,5 @@ group :production do
   gem 'pg'
 end
 
-ruby '2.1.8'
-gem 'refinerycms-events', path: 'vendor/extensions'
-gem 'refinerycms-projects', path: 'vendor/extensions'
+
+gem 'refinerycms-works', path: 'vendor/extensions'

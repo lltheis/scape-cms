@@ -1,0 +1,38 @@
+it:
+  refinery:
+    plugins:
+      works:
+        title: Works
+    works:
+      admin:
+        works:
+          actions:
+            create_new: Aggiungi Nuovo Work
+            reorder: Riordina Works
+            reorder_done: Termina il Riordino di Works
+          records:
+            title: Works
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Works. Clicca "Aggiungi Nuovo Work" per aggiungere il tuo primo work.
+          work:
+            view_live_html: Guarda live questo work <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo work
+            delete: Rimuovi per sempre questo work
+      works:
+        show:
+          other: Altri Works
+  activerecord:
+    attributes:
+      'refinery/works/work':
+        name: Name
+        location: Location
+        year: Year
+        description: Description
+        img_1: Img 1
+        img_2: Img 2
+        img_3: Img 3
+        img_4: Img 4
+        img_5: Img 5
+        img_6: Img 6
+        img_7: Img 7
+        img_8: Img 8
