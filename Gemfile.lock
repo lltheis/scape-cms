@@ -1,12 +1,9 @@
-GIT
-  remote: git://github.com/refinery/refinerycms-page-images.git
-  revision: 4f40c58c492a6eed9a876f10c2c1e06402d294f9
-  branch: master
+PATH
+  remote: vendor/extensions
   specs:
-    refinerycms-page-images (3.0.0)
-      decorators (~> 2.0.0)
-      globalize (~> 5.0)
-      refinerycms-pages (~> 3.0.0)
+    refinerycms-projects (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -314,7 +311,7 @@ DEPENDENCIES
   rails_12factor
   refinerycms (~> 3.0)
   refinerycms-authentication-devise (~> 1.0)
-  refinerycms-page-images (~> 3.0.0)!
+  refinerycms-projects!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

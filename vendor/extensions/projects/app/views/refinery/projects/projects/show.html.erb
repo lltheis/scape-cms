@@ -1,0 +1,34 @@
+<% content_for :body_content_title do %>
+  <%= @project.name %>
+<% end %>
+
+<% content_for :body do %>
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="col-sm-8">
+      <div><a href="/projects">our work</a></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="project-slider-holder">
+        <div class="royalSlider" id="project-slider">
+          <%= image_tag(@project.img_1, class: "img-responsive") %>
+          <%= image_tag(@project.img_2, class: "img-responsive") %>
+          <%= image_tag(@project.img_3, class: "img-responsive") %>
+        </div><!-- RoyalSlider -->
+      </div><!-- project-slider-holder -->
+    </div><!-- Bootstrap col-sm-4 -->
+      
+      <div class="col-sm-4 works">
+      <div class="works-content">
+        <span class="works-title"><%=raw @project.name %></span><br>
+        <%=raw @project.location %><br>
+        <%=raw @project.year %>
+      </div>
+      <div><%=raw @project.description %></div>
+  </div><!-- Bootstrap col-sm-4 -->
+</div><!-- /row -->
+</div><!-- /container -->
+    
+<% end %>
+
+<%= render '/refinery/content_page' %>

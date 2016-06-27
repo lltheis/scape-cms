@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <div  class="container-fluid" id="projects">
+  	<div class="row">
+    <% @projects.each do |project| %>
+        <%= link_to project.name, refinery.projects_project_path(project) %>
+    <% end %>
+  </div>
+</div>
+<% end %>
+
+<%= render '/refinery/content_page' %>

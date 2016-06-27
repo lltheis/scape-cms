@@ -17,10 +17,10 @@
 
 
 # Added by Refinery CMS Events extension
-Refinery::Events::Engine.load_seed
+# Refinery::Events::Engine.load_seed
 
 # Added by Refinery CMS Projects extension
 Refinery::Projects::Engine.load_seed
 
 # Added by Refinery CMS Works extension
-Refinery::Works::Engine.load_seed
+# Refinery::Works::Engine.load_seed

@@ -13,9 +13,19 @@ Issues -
 ** Where is the home page content found?
    SOLUTION - C:\Users\Laura\Documents\railsVM\scape-cms\app\views\refinery\pages
 
-** What is the rails image path - for the local host? For Heroku?
-   SOLUTION - ?
-
 ** acts_as_indexed - I removed this from the Gemfile as it was not allowing me to save pages in my localhost to the vagrant/tmp folder. I am not sure what other issues this will cause.
 
 ** Do I need extensions for projects / works so that the form is created correctly for editing in Refinery? Why can I not create the form like the products set up in my CareerFoundry project?
+   SOLUTION - from http://www.refinerycms.com/guides/generate-an-extension-to-use-your-mvcs, "Although we could technically create a new page in Refinery to add the event content there, areas that have special functionality are much better suited as an extension."
+
+$ rails generate refinery:engine project name:string location:string year:string description:text img_1:image img_2:image img_3:image img_4:image img_5:image img_6:image img_7:image img_8:image img_home:image
+$ bundle install
+$ rails generate refinery:projects
+$ rake db:migrate
+$ rake db:seed
+(restart server)
+
+** What is the rails image path - for the local host? For Heroku?
+   SOLUTION - ?
+
+** I do not think the the extension "Image Slideshows" is necessary unless I cannot get royalslider.js working.

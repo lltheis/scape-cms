@@ -1,0 +1,99 @@
+<% content_for :body_content_title do %>
+  <%= @project.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @project.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Location</h1>
+    <p>
+      <%=raw @project.location %>
+    </p>
+  </section>
+  <section>
+    <h1>Year</h1>
+    <p>
+      <%=raw @project.year %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @project.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Img 1</h1>
+    <p>
+      <%= image_fu @project.img_1, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Img 2</h1>
+    <p>
+      <%= image_fu @project.img_2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Img 3</h1>
+    <p>
+      <%= image_fu @project.img_3, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Img 4</h1>
+    <p>
+      <%= image_fu @project.img_4, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Img 5</h1>
+    <p>
+      <%= image_fu @project.img_5, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Img 6</h1>
+    <p>
+      <%= image_fu @project.img_6, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Img 7</h1>
+    <p>
+      <%= image_fu @project.img_7, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Img 8</h1>
+    <p>
+      <%= image_fu @project.img_8, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Img Home</h1>
+    <p>
+      <%= image_fu @project.img_home, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="projects">
+      <% @projects.each do |project| %>
+        <li>
+          <%= link_to project.name, refinery.projects_project_path(project) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>
