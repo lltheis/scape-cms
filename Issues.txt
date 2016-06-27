@@ -4,3 +4,18 @@ Issues -
 
 ** Remove extensions (eg. projects)
    SOLUTION - rails destroy refinery:engine engine_name
+
+** How do I load my javascript and custom css files?
+   SOLUTION - C:\Users\Laura\Documents\railsVM\TheisRailsApp\config\initializers\assets.rb, add the following under precompile assets. These files (projects.css & royalslider.css) are found under C:\Users\Laura\Documents\railsVM\scape-cms\app\assets\stylesheets.
+      Rails.application.config.assets.precompile += %w( projects.css )
+      Rails.application.config.assets.precompile += %w( royalslider.css )
+
+** Where is the home page content found?
+   SOLUTION - C:\Users\Laura\Documents\railsVM\scape-cms\app\views\refinery\pages
+
+** What is the rails image path - for the local host? For Heroku?
+   SOLUTION - ?
+
+** acts_as_indexed - I removed this from the Gemfile as it was not allowing me to save pages in my localhost to the vagrant/tmp folder. I am not sure what other issues this will cause.
+
+** Do I need extensions for projects / works so that the form is created correctly for editing in Refinery? Why can I not create the form like the products set up in my CareerFoundry project?
