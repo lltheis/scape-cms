@@ -23,4 +23,17 @@
 </div><!-- /container -->
 <% end %>
 
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="works">
+      <% @works.each do |work| %>
+        <li>
+          <%= link_to work.name, refinery.works_work_path(work) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
 <%= render '/refinery/content_page' %>

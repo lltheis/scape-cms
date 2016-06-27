@@ -1,27 +1,7 @@
-<!-- OUR WORK SECTION -->        
-<div class="container">
-  <div class="row no-gutter">
-    <div class="col-sm-10">
-      <div class="big-box">&nbsp;</div>
+  <div class="container-fluid">
+    <div class="row">
+      <%= render @projects %>
     </div>
-    <div class="col-sm-2">
-      <div class="row no-gutter">
-        <div class="col-sm-2">
-        <div class="works-title">
-					<% @works.each do |work| %>
-        		<%= link_to work.name, refinery.works_work_path(work) %><br>
-    			<% end %>
-
-        </div>
-      	</div>
-        <div class="col-sm-2 works-img">
-          <% @works.each do |work| %>
-            <%= work.img_1 %>
-          <% end %>
-        </div>
-      </div><!-- /row works -->
-    </div>
-  </div><!-- /row -->
-</div><!-- /container -->
+  </div>
 
 <%= render '/refinery/content_page' %>

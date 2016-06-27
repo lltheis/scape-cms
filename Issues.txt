@@ -1,0 +1,6 @@
+Issues - 
+** Tabs show twice
+   SOLUTION - restart server and refresh page
+
+** Remove extensions (eg. projects)
+   SOLUTION - rails destroy refinery:engine engine_name

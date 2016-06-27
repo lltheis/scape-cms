@@ -1,0 +1,696 @@
+Folder PATH listing for volume OS
+Volume serial number is CEE2-9AE3
+C:.
+|   .gitignore
+|   config.ru
+|   dragonfly.log
+|   Gemfile
+|   Gemfile.lock
+|   output.doc
+|   Procfile
+|   Rakefile
+|   README.rdoc
+|   
++---.bundle
+|       config
+|       
++---.git
+|   |   COMMIT_EDITMSG
+|   |   config
+|   |   description
+|   |   FETCH_HEAD
+|   |   HEAD
+|   |   index
+|   |   ORIG_HEAD
+|   |   
+|   +---branches
+|   +---hooks
+|   |       applypatch-msg.sample
+|   |       commit-msg.sample
+|   |       post-update.sample
+|   |       pre-applypatch.sample
+|   |       pre-commit.sample
+|   |       pre-push.sample
+|   |       pre-rebase.sample
+|   |       prepare-commit-msg.sample
+|   |       update.sample
+|   |       
+|   +---info
+|   |       exclude
+|   |       
+|   |   +---info
+|   |   \---pack
+|   \---refs
+|       +---heads
+|       |       master
+|       |       
+|       +---remotes
+|       |   +---heroku
+|       |   |       master
+|       |   |       
+|       |   \---origin
+|       |           master
+|       |           
+|       \---tags
++---app
+|   +---assets
+|   |   +---images
+|   |   |   |   .keep
+|   |   |   |   Badger_1.jpg
+|   |   |   |   Badger_2.jpg
+|   |   |   |   Badger_3.jpg
+|   |   |   |   Badger_4.jpg
+|   |   |   |   Badger_5.jpg
+|   |   |   |   Badger_6.jpg
+|   |   |   |   Cabins_1.jpg
+|   |   |   |   Cabins_2.jpg
+|   |   |   |   Cabins_3.jpg
+|   |   |   |   Cabins_4.jpg
+|   |   |   |   Cabins_5.jpg
+|   |   |   |   Cabins_6.jpg
+|   |   |   |   Cabins_7.jpg
+|   |   |   |   CentralPark_1.JPG
+|   |   |   |   Chocolate_1.jpg
+|   |   |   |   Chocolate_2.jpg
+|   |   |   |   Chocolate_3.jpg
+|   |   |   |   Chocolate_4.jpg
+|   |   |   |   Chocolate_5.jpg
+|   |   |   |   ConvertibleHouse_1.jpg
+|   |   |   |   ConvertibleHouse_10.jpg
+|   |   |   |   ConvertibleHouse_2.jpg
+|   |   |   |   ConvertibleHouse_3.jpg
+|   |   |   |   ConvertibleHouse_4.jpg
+|   |   |   |   ConvertibleHouse_7.jpg
+|   |   |   |   ConvertibleHouse_9.jpg
+|   |   |   |   DeerCreek_1.jpg
+|   |   |   |   DeerCreek_2.jpg
+|   |   |   |   DeerCreek_3.jpg
+|   |   |   |   DeerCreek_4.jpg
+|   |   |   |   EastFork_1.jpg
+|   |   |   |   EastFork_2.jpg
+|   |   |   |   EastFork_3.jpg
+|   |   |   |   EastFork_4.jpg
+|   |   |   |   Gimlet_1.jpg
+|   |   |   |   Gimlet_2.jpg
+|   |   |   |   Gimlet_3.jpg
+|   |   |   |   Hexagon_1.JPG
+|   |   |   |   Hexagon_2.JPG
+|   |   |   |   Hexagon_3.JPG
+|   |   |   |   IRMR4.jpg
+|   |   |   |   IRMR_7.jpg
+|   |   |   |   Penny_1.jpg
+|   |   |   |   Penny_2.jpg
+|   |   |   |   Penny_3.jpg
+|   |   |   |   Penny_4.jpg
+|   |   |   |   Penny_5.jpg
+|   |   |   |   Penny_6.jpg
+|   |   |   |   Penny_7.jpg
+|   |   |   |   Penny_8.jpg
+|   |   |   |   Ranch_1.jpg
+|   |   |   |   Ranch_2.jpg
+|   |   |   |   Ranch_3.jpg
+|   |   |   |   Ranch_4.jpg
+|   |   |   |   Ranch_5.jpg
+|   |   |   |   Ranch_6.jpg
+|   |   |   |   Ranch_7.jpg
+|   |   |   |   Spur_1.jpg
+|   |   |   |   Spur_10.jpg
+|   |   |   |   Spur_11.jpg
+|   |   |   |   Spur_12.JPG
+|   |   |   |   Spur_13.jpg
+|   |   |   |   Spur_2.jpg
+|   |   |   |   Spur_3.jpg
+|   |   |   |   Spur_4.jpg
+|   |   |   |   Spur_5.jpg
+|   |   |   |   Spur_6.jpg
+|   |   |   |   Spur_7.jpg
+|   |   |   |   Spur_8.jpg
+|   |   |   |   Spur_9.jpg
+|   |   |   |   WestCanyon_1.jpg
+|   |   |   |   WestCanyon_2.jpg
+|   |   |   |   WestCanyon_3.jpg
+|   |   |   |   
+|   |   |   \---home
+|   |   |           Badger_3.jpg
+|   |   |           Cabins_5.jpg
+|   |   |           ConvertibleHouse_2.jpg
+|   |   |           Gimlet_1.jpg
+|   |   |           Spur_10.jpg
+|   |   |           
+|   |   +---javascripts
+|   |   |       application.js
+|   |   |       home.coffee
+|   |   |       jquery.royalslider.full.min.js
+|   |   |       jquery.royalslider.min.js
+|   |   |       projects.coffee
+|   |   |       
+|   |   \---stylesheets
+|   |           application.scss
+|   |           projects.scss
+|   |           royalslider.css
+|   |           
+|   +---controllers
+|   |   |   application_controller.rb
+|   |   |   home_controller.rb
+|   |   |   projects_controller.rb
+|   |   |   static_pages_controller.rb
+|   |   |   
+|   |   +---concerns
+|   |   |       .keep
+|   |   |       
+|   |   \---refinery
+|   |       |   admin_controller.rb
+|   |       |   fast_controller.rb
+|   |       |   pages_controller.rb
+|   |       |   sitemap_controller.rb
+|   |       |   wymeditor_controller.rb
+|   |       |   
+|   |       +---admin
+|   |       |       core_controller.rb
+|   |       |       dialogs_controller.rb
+|   |       |       images_controller.rb
+|   |       |       pages_controller.rb
+|   |       |       pages_dialogs_controller.rb
+|   |       |       page_parts_controller.rb
+|   |       |       resources_controller.rb
+|   |       |       
+|   |       +---authentication
+|   |       |   \---devise
+|   |       |       |   passwords_controller.rb
+|   |       |       |   sessions_controller.rb
+|   |       |       |   users_controller.rb
+|   |       |       |   
+|   |       |       \---admin
+|   |       |               users_controller.rb
+|   |       |               
+|   |       +---pages
+|   |       |   \---admin
+|   |       |           preview_controller.rb
+|   |       |           
+|   |       \---works
+|   |           |   works_controller.rb
+|   |           |   
+|   |           \---admin
+|   |                   works_controller.rb
+|   |                   
+|   +---decorators
+|   |   +---controllers
+|   |   |   \---refinery
+|   |   |           .keep
+|   |   |           
+|   |   \---models
+|   |       \---refinery
+|   |               .keep
+|   |               
+|   +---helpers
+|   |       application_helper.rb
+|   |       home_helper.rb
+|   |       layouts_helper.rb
+|   |       static_pages_helper.rb
+|   |       
+|   +---mailers
+|   |       .keep
+|   |       
+|   +---models
+|   |   |   .keep
+|   |   |   project.rb
+|   |   |   
+|   |   +---concerns
+|   |   |       .keep
+|   |   |       
+|   |   \---refinery
+|   |       |   image.rb
+|   |       |   image_page.rb
+|   |       |   page.rb
+|   |       |   page_part.rb
+|   |       |   resource.rb
+|   |       |   thumbnail_dimensions.rb
+|   |       |   
+|   |       +---authentication
+|   |       |   \---devise
+|   |       |           nil_user.rb
+|   |       |           role.rb
+|   |       |           roles_users.rb
+|   |       |           user.rb
+|   |       |           user_plugin.rb
+|   |       |           
+|   |       +---core
+|   |       |       base_model.rb
+|   |       |       
+|   |       \---works
+|   |               work.rb
+|   |               
+|   +---presenters
+|   |   \---refinery
+|   |       \---pages
+|   |               menu_presenter.rb
+|   |               
+|   \---views
+|       +---layouts
+|       |   |   application.html.erb
+|       |   |   
+|       |   \---refinery
+|       |           admin.html.erb
+|       |           admin_dialog.html.erb
+|       |           flash.html.erb
+|       |           
+|       +---refinery
+|       |   |   wymiframe.html.erb
+|       |   |   _content_page.html.erb
+|       |   |   _draft_page_message.html.erb
+|       |   |   _footer.html.erb
+|       |   |   _google_analytics.html.erb
+|       |   |   _head.html.erb
+|       |   |   _header.html.erb
+|       |   |   _headerORIG.html.erb
+|       |   |   _html_tag.html.erb
+|       |   |   _javascripts.html.erb
+|       |   |   _message.html.erb
+|       |   |   _no_script.html.erb
+|       |   |   _site_bar.html.erb
+|       |   |   
+|       |   +---admin
+|       |   |   |   dialog_success.html.erb
+|       |   |   |   _continue_editing.html.erb
+|       |   |   |   _dialog_success.html.erb
+|       |   |   |   _error_messages.html.erb
+|       |   |   |   _form_actions.html.erb
+|       |   |   |   _form_advanced_options_menu.html.erb
+|       |   |   |   _head.html.erb
+|       |   |   |   _image_picker.html.erb
+|       |   |   |   _javascripts.html.erb
+|       |   |   |   _locale_picker.html.erb
+|       |   |   |   _make_sortable.html.erb
+|       |   |   |   _menu.html.erb
+|       |   |   |   _menu_item.html.erb
+|       |   |   |   _resource_picker.html.erb
+|       |   |   |   _search.html.erb
+|       |   |   |   _search_header.html.erb
+|       |   |   |   _sortable_list.html.erb
+|       |   |   |   _tabbed_fields.html.erb
+|       |   |   |   _wysiwyg.html.erb
+|       |   |   |   
+|       |   |   +---dialogs
+|       |   |   |       show.html.erb
+|       |   |   |       
+|       |   |   +---images
+|       |   |   |       edit.html.erb
+|       |   |   |       index.html.erb
+|       |   |   |       insert.html.erb
+|       |   |   |       new.html.erb
+|       |   |   |       _actions.html.erb
+|       |   |   |       _existing_image.html.erb
+|       |   |   |       _form.html.erb
+|       |   |   |       _grid_view.html.erb
+|       |   |   |       _images.html.erb
+|       |   |   |       _list_view.html.erb
+|       |   |   |       _list_view_image.html.erb
+|       |   |   |       _records.html.erb
+|       |   |   |       
+|       |   |   +---pages
+|       |   |   |   |   children.html.erb
+|       |   |   |   |   edit.html.erb
+|       |   |   |   |   index.html.erb
+|       |   |   |   |   new.html.erb
+|       |   |   |   |   _actions.html.erb
+|       |   |   |   |   _form.html.erb
+|       |   |   |   |   _form_advanced_options.html.erb
+|       |   |   |   |   _form_advanced_options_seo.html.erb
+|       |   |   |   |   _form_extra_fields_for_more_options.html.erb
+|       |   |   |   |   _form_fields_after_title.html.erb
+|       |   |   |   |   _form_new_page_parts.html.erb
+|       |   |   |   |   _form_page_parts.html.erb
+|       |   |   |   |   _page.html.erb
+|       |   |   |   |   _page_part_field.html.erb
+|       |   |   |   |   _records.html.erb
+|       |   |   |   |   _save_and_continue_callback.html.erb
+|       |   |   |   |   _sortable_list.html.erb
+|       |   |   |   |   
+|       |   |   |   \---tabs
+|       |   |   |           _images.html.erb
+|       |   |   |           _images_bar.html.erb
+|       |   |   |           _images_field.html.erb
+|       |   |   |           
+|       |   |   +---pages_dialogs
+|       |   |   |       link_to.html.erb
+|       |   |   |       _page_link.html.erb
+|       |   |   |       
+|       |   |   \---resources
+|       |   |           edit.html.erb
+|       |   |           index.html.erb
+|       |   |           insert.html.erb
+|       |   |           new.html.erb
+|       |   |           _actions.html.erb
+|       |   |           _existing_resource.html.erb
+|       |   |           _form.html.erb
+|       |   |           _records.html.erb
+|       |   |           _resource.html.erb
+|       |   |           _resources.html.erb
+|       |   |           
+|       |   +---authentication
+|       |   |   \---devise
+|       |   |       +---admin
+|       |   |       |   \---users
+|       |   |       |           edit.html.erb
+|       |   |       |           index.html.erb
+|       |   |       |           new.html.erb
+|       |   |       |           _actions.html.erb
+|       |   |       |           _form.html.erb
+|       |   |       |           _records.html.erb
+|       |   |       |           _user.html.erb
+|       |   |       |           _users.html.erb
+|       |   |       |           
+|       |   |       +---passwords
+|       |   |       |       edit.html.erb
+|       |   |       |       new.html.erb
+|       |   |       |       
+|       |   |       +---sessions
+|       |   |       |       new.html.erb
+|       |   |       |       
+|       |   |       +---users
+|       |   |       |       new.html.erb
+|       |   |       |       
+|       |   |       \---user_mailer
+|       |   |               reset_notification.html.erb
+|       |   |               reset_notification.text.plain.erb
+|       |   |               
+|       |   +---layouts
+|       |   |       login.html.erb
+|       |   |       
+|       |   +---pages
+|       |   |       home.html.erb
+|       |   |       show.html.erb
+|       |   |       
+|       |   +---sitemap
+|       |   |       index.xml.builder
+|       |   |       
+|       |   \---works
+|       |       +---admin
+|       |       |   \---works
+|       |       |           edit.html.erb
+|       |       |           index.html.erb
+|       |       |           new.html.erb
+|       |       |           _actions.html.erb
+|       |       |           _form.html.erb
+|       |       |           _records.html.erb
+|       |       |           _sortable_list.html.erb
+|       |       |           _work.html.erb
+|       |       |           _works.html.erb
+|       |       |           
+|       |       \---works
+|       |               index.html.erb
+|       |               show.html.erb
+|       |               
+|       \---sitemap
+|               index.xml.builder
+|               
++---bin
+|       bundle
+|       rails
+|       rake
+|       setup
+|       spring
+|       
++---config
+|   |   application.rb
+|   |   boot.rb
+|   |   database.yml
+|   |   database.yml.mysql
+|   |   database.yml.postgresql
+|   |   database.yml.sqlite3
+|   |   environment.rb
+|   |   puma.rb
+|   |   routes.rb
+|   |   secrets.yml
+|   |   
+|   +---environments
+|   |       development.rb
+|   |       production.rb
+|   |       test.rb
+|   |       
+|   +---initializers
+|   |   |   assets.rb
+|   |   |   backtrace_silencers.rb
+|   |   |   cookies_serializer.rb
+|   |   |   filter_parameter_logging.rb
+|   |   |   inflections.rb
+|   |   |   mime_types.rb
+|   |   |   session_store.rb
+|   |   |   wrap_parameters.rb
+|   |   |   
+|   |   \---refinery
+|   |           core.rb
+|   |           i18n.rb
+|   |           images.rb
+|   |           pages.rb
+|   |           page_images.rb
+|   |           resources.rb
+|   |           
+|   \---locales
+|           en.yml
+|           
++---db
+|   |   development.sqlite3
+|   |   schema.rb
+|   |   seeds.rb
+|   |   
+|   \---migrate
+|           20160511164520_create_projects.rb
+|           20160525205122_add_image_columns.rb
+|           20160606123947_create_refinerycms_resources_schema.refinery_resources.rb
+|           20160606123948_add_translated_title_to_refinery_resources.refinery_resources.rb
+|           20160606123949_create_refinerycms_pages_schema.refinery_pages.rb
+|           20160606123950_add_custom_slug_to_refinery_pages.refinery_pages.rb
+|           20160606123951_add_slug_to_refinery_page_parts.refinery_pages.rb
+|           20160606123952_update_slug_and_title_in_refinery_page_parts.refinery_pages.rb
+|           20160606123953_fix_slug_format_in_refinery_page_parts.refinery_pages.rb
+|           20160606123954_create_refinerycms_images_schema.refinery_images.rb
+|           20160606123955_remove_image_ext_from_refinery_images.refinery_images.rb
+|           20160606123956_add_title_and_alt_to_refinery_images.refinery_images.rb
+|           20160606123957_translate_refinery_images.refinery_images.rb
+|           20160606123958_create_seo_meta.seo_meta.rb
+|           20160606123959_remove_meta_keywords_from_seo_meta.seo_meta.rb
+|           20160606123960_create_refinerycms_authentication_schema.refinery_authentication_devise.rb
+|           20160606123961_add_slug_to_refinery_users.refinery_authentication_devise.rb
+|           20160606123962_add_full_name_to_refinery_users.refinery_authentication_devise.rb
+|           20160606123963_rename_tables_to_new_namespace.refinery_authentication_devise.rb
+|           20160606162812_create_projects_projects.refinery_projects.rb
+|           20160622222636_create_events_events.refinery_events.rb
+|           20160623154001_change_year_from_date_to_string.rb
+|           20160623221436_create_works_works.refinery_works.rb
+|           20160624180918_create_page_images.refinery_page_images.rb
+|           20160624180919_add_caption_to_image_pages.refinery_page_images.rb
+|           20160624180920_translate_page_image_captions.refinery_page_images.rb
+|           20160624180921_change_page_to_polymorphic.refinery_page_images.rb
+|           
++---lib
+|   +---assets
+|   |       .keep
+|   |       
+|   \---tasks
+|           .keep
+|           
++---log
+|       .keep
+|       development.log
+|       production.log
+|       
++---public
+|   |   404.html
+|   |   422.html
+|   |   500.html
+|   |   favicon.ico
+|   |   robots.txt
+|   |   
+|   +---assets
+|   |   |   .sprockets-manifest-e0628adbeed962fdba1c23dbd1f59180.json
+|   |                       
+|   +---index
+|   |   \---development
+|   |       \---refinery
+|   |           +---image
+|   |           |       104_111_117.ind
+|   |           |       108_97_117.ind
+|   |           |       116_104_101.ind
+|   |           |       12288.ind
+|   |           |       12288.ind.tmp
+|   |           |       50.ind
+|   |           |       53.ind
+|   |           |       54.ind
+|   |           |       99_111_110.ind
+|   |           |       99_111_110.ind.tmp
+|   |           |       size
+|   |           |       version
+|   |           |       
+|   |           \---page
+|   |                   101_118_101.ind
+|   |                   101_118_101.ind.tmp
+|   |                   109_97_112.ind
+|   |                   109_97_112.ind.tmp
+|   |                   12288.ind
+|   |                   12288.ind.tmp
+|   |                   size
+|   |                   size.tmp
+|   |                   version
+|   |                   
+|   +---pids
+|   +---sessions
+|   \---sockets
+\---vendor
+    +---assets
+    |   +---javascripts
+    |   |       .keep
+    |   |       
+    |   \---stylesheets
+    |           .keep
+    |           
+    \---extensions
+        +---projects
+        |   +---app
+        |   |   +---controllers
+        |   |   |   \---refinery
+        |   |   |       \---projects
+        |   |   |           \---admin
+        |   |   +---models
+        |   |   |   \---refinery
+        |   |   |       \---projects
+        |   |   \---views
+        |   |       \---refinery
+        |   |           \---projects
+        |   |               +---admin
+        |   |               |   \---projects
+        |   |               \---projects
+        |   |                       indexOLD.html.erb
+        |   |                       showOLD.html.erb
+        |   |                       
+        |   +---config
+        |   |   \---locales
+        |   +---db
+        |   |   \---migrate
+        |   +---lib
+        |   |   +---generators
+        |   |   |   \---refinery
+        |   |   +---refinery
+        |   |   |   \---projects
+        |   |   \---tasks
+        |   |       \---refinery
+        |   +---script
+        |   +---spec
+        |   |   +---features
+        |   |   |   \---refinery
+        |   |   |       \---projects
+        |   |   |           \---admin
+        |   |   +---models
+        |   |   |   \---refinery
+        |   |   |       \---projects
+        |   |   \---support
+        |   |       \---factories
+        |   |           \---refinery
+        |   \---tasks
+        \---works
+            |   Gemfile
+            |   Rakefile
+            |   readme.md
+            |   refinerycms-works.gemspec
+            |   
+            +---app
+            |   +---controllers
+            |   |   \---refinery
+            |   |       \---works
+            |   |           |   works_controller.rb
+            |   |           |   
+            |   |           \---admin
+            |   |                   works_controller.rb
+            |   |                   
+            |   +---models
+            |   |   \---refinery
+            |   |       \---works
+            |   |               work.rb
+            |   |               
+            |   \---views
+            |       \---refinery
+            |           \---works
+            |               +---admin
+            |               |   \---works
+            |               |           edit.html.erb
+            |               |           index.html.erb
+            |               |           new.html.erb
+            |               |           _actions.html.erb
+            |               |           _form.html.erb
+            |               |           _records.html.erb
+            |               |           _sortable_list.html.erb
+            |               |           _work.html.erb
+            |               |           _workOLD.html.erb
+            |               |           _works.html.erb
+            |               |           
+            |               \---works
+            |                       index.html.erb
+            |                       indexOLD.html.erb
+            |                       show.html
+            |                       show.html.erb
+            |                       showOLD.html.erb
+            |                       
+            +---config
+            |   |   routes.rb
+            |   |   
+            |   \---locales
+            |           cs.yml
+            |           en.yml
+            |           es.yml
+            |           fr.yml
+            |           it.yml
+            |           nb.yml
+            |           nl.yml
+            |           sk.yml
+            |           tr.yml
+            |           zh-CN.yml
+            |           
+            +---db
+            |   |   seeds.rb
+            |   |   
+            |   \---migrate
+            |           1_create_works_works.rb
+            |           
+            +---lib
+            |   |   refinerycms-works.rb
+            |   |   
+            |   +---generators
+            |   |   \---refinery
+            |   |           works_generator.rb
+            |   |           
+            |   +---refinery
+            |   |   |   works.rb
+            |   |   |   
+            |   |   \---works
+            |   |           engine.rb
+            |   |           
+            |   \---tasks
+            |       \---refinery
+            |               works.rake
+            |               
+            +---script
+            |       rails
+            |       
+            +---spec
+            |   |   spec_helper.rb
+            |   |   
+            |   +---features
+            |   |   \---refinery
+            |   |       \---works
+            |   |           \---admin
+            |   |                   works_spec.rb
+            |   |                   
+            |   +---models
+            |   |   \---refinery
+            |   |       \---works
+            |   |               work_spec.rb
+            |   |               
+            |   \---support
+            |       \---factories
+            |           \---refinery
+            |                   works.rb
+            |                   
+            \---tasks
+                    rspec.rake
+                    testing.rake
+                    
