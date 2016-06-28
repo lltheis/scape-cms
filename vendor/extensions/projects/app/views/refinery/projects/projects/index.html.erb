@@ -2,7 +2,8 @@
   <div  class="container-fluid" id="projects">
   	<div class="row">
     <% @projects.each do |project| %>
-        <%= link_to project.name, refinery.projects_project_path(project) %>
+    	<%= image_tag(project.img_home.url, class: "img-responsive") %>
+      <%= link_to project.name, refinery.projects_project_path(project) %>
     <% end %>
   </div>
 </div>
