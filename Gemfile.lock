@@ -112,7 +112,7 @@ GEM
     globalize (5.0.1)
       activemodel (>= 4.2.0, < 4.3)
       activerecord (>= 4.2.0, < 4.3)
-    heroku (3.43.3)
+    heroku (3.43.4)
       heroku-api (= 0.4.2)
       launchy (= 2.4.3)
       multi_json (= 1.11.2)

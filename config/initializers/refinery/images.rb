@@ -37,6 +37,7 @@ Refinery::Images.configure do |config|
   # config.dragonfly_verify_urls = true
   config.dragonfly_secret = "8ad06d0d2c6b0e0e4958f926a5015ed705a01ab778bb0337"
   # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
+  config.dragonfly_url_format = "/assets/images/:job/:basename.:ext"
   # config.dragonfly_url_host = ""
   # config.datastore_root_path = "/vagrant/scape-cms/public/system/refinery/images"
 
