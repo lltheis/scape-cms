@@ -6,7 +6,7 @@ Issues -
    SOLUTION - rails destroy refinery:engine engine_name
 
 ** How do I load my javascript and custom css files?
-   SOLUTION - C:\Users\Laura\Documents\railsVM\TheisRailsApp\config\initializers\assets.rb, add the following under precompile assets. These files (projects.css & royalslider.css) are found under C:\Users\Laura\Documents\railsVM\scape-cms\app\assets\stylesheets.
+   SOLUTION - C:\Users\Laura\Documents\railsVM\scape-cms\config\initializers\assets.rb, add the following under precompile assets. These files (projects.css & royalslider.css) are found under C:\Users\Laura\Documents\railsVM\scape-cms\app\assets\stylesheets.
       Rails.application.config.assets.precompile += %w( projects.css )
       Rails.application.config.assets.precompile += %w( royalslider.css )
 
