@@ -1,6 +1,3 @@
-<% content_for :body_content_title do %>
-  <%= @project.name %>
-<% end %>
 
 <% content_for :body do %>
 <div class="container-fluid">
@@ -9,9 +6,10 @@
       <div><a href="/projects">our work</a></div>
     </div>
     <div class="col-sm-4">
-      <div>
-          <%= image_tag(@project.img_1.url, class:"img-responsive") %>
-          <%= image_tag(@project.img_2.url, class:"img-responsive") %>
+      <div class="royalSlider sliderWorks rsDefault rsHor rsWithBullets">
+          <%= image_tag(@project.img_1.url, class:"rsImg") %>
+          <%= image_tag(@project.img_2.url, class:"rsImg") %>
+        </div>
       </div><!-- project-slider-holder -->
     </div><!-- Bootstrap col-sm-4 -->
       
