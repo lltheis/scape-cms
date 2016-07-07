@@ -6,14 +6,10 @@
       <div><a href="/projects">our work</a></div>
     </div>
     <div class="col-sm-4">
-      <div class="royalSlider sliderWorks rsDefault rsHor rsWithBullets">
-          <%= image_tag(@project.img_1.url, class:"rsImg") %>
-          <%= image_tag(@project.img_2.url, class:"rsImg") %>
-        </div>
-      </div><!-- project-slider-holder -->
-    </div><!-- Bootstrap col-sm-4 -->
-      
-      <div class="col-sm-4 works">
+      <div class="royalSlider sliderWorks rsDefault">
+        <%= image_tag(@project.img_1.url, class: "rsImg") %>
+        <%= image_tag(@project.img_2.url, class: "rsImg") %>
+      </div>    
       <div class="works-content">
         <span class="works-title"><%=raw @project.name %></span><br>
         <%=raw @project.location %><br>

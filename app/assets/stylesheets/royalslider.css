@@ -1,14 +1,16 @@
 /* v1.0.6 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
 .royalSlider {
-	position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+	width: 100%;
+	height: 600px;
 }
+
 .royalSlider > * {
 	float: left;
+}
+
+.sliderWorks {
+	max-height: 300px;
 }
 
 .rsWebkit3d .rsSlide,
@@ -123,6 +125,7 @@
 	top: 0;
 	display: block;
 	overflow: hidden;
+	
 	height: 100%;
 	width: 100%;
 }
@@ -242,17 +245,3 @@ img.rsImg {
 	z-index: 20;
 	background: url(blank.gif);
 }
-
-/***** CUSTOM CSS *****/
-.project-slider-holder {
-	width: 100%;
-	min-height: 200px;
-	overflow: hidden;
-}
-
-#project-slider {
-	position: absolute;
-	height: auto;
-	width: auto;
-}
-
