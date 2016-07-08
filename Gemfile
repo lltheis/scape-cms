@@ -80,4 +80,6 @@ group :production do
   # Postgres support (added for Heroku)
   gem 'pg'
 end
+
 gem 'refinerycms-projects', path: 'vendor/extensions'
+gem 'newrelic_rpm'
